@@ -1,9 +1,3 @@
-## <h1>Setup:<h1>
-- Download and install Python (Ignore the step if you already have python installed)
-- Clone this repo, navigate to Idnow_Automation_Pytest folder.
-- Execute requirements.txt file to install all the dependent python libraries using following command and make it pass without any error: pip install -r requirements.txt
-- Update you browserstack username, accesskey and app url in browserstack.yml to execute the mobile test
-
 # Project Structure
 
 This project follows a structured approach to organizing code for automated testing. Below is a brief description of the key folders and files:
@@ -34,3 +28,11 @@ pytest tests_mobile/
 pytest -vs --capture sys tests_api\test_requests.py --html=report.html
 pytest -vs --capture sys tests_mobile\test_app_android.py --html=report.html
 
+
+Running the test to validate mobile solution for android, 
+1. Signin to Broswerstack and select App Automate section.
+2. Upload the ipa and apk file kept in mobile_app folder of the framework.
+3. After successful upload, fetch the username, accesskey and app url. 
+4. These details need to be provided in Browserstack.yml file in the framework under test_data directory in order to run the solution. Please update app url at two occurances to satisfy the capabilties.
+5. Run the test using command - pytest tests_mobile/test_app_ios.py (for ios testing) or pytest tests_mobile/test_app_android.py(for android testing)
+6. You can see the current execution in session created on Browserstack and the run results in logs.

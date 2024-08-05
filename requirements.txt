@@ -1,0 +1,7 @@
+pytest
+pytest-html==3.2.0
+requests
+PyYAML
+Appium-Python-Client
+browserstack-local==1.2.7
+selenium

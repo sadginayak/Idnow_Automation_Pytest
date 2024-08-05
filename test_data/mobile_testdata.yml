@@ -1,0 +1,23 @@
+  Platform:
+    android:
+      ident_id: "TS2-LJGCD"
+      idnow_logo_classname: "android.widget.ImageView"
+      ident_box_classname: "android.widget.EditText"
+      start_button_xpath: "//android.widget.TextView[@resource-id='io.idnow.autoident:id/start_ident']"
+      terms_conditions_xpath: "//android.widget.TextView[@resource-id='io.idnow.autoident:id/consentScreenHeader']"
+      close_icon_accessibility_id: "Close"
+      quit_identification_display_xpath: "//android.widget.TextView[@text='Quit identification session']"
+      options_radio_button_xpath: "(//android.widget.RadioButton[@resource-id='io.idnow.autoident:id/reason_radio'])[1]"
+      quit_button_xpath: "//android.widget.Button[@resource-id='io.idnow.autoident:id/finish_button']"
+      failure_screen_classname: "android.widget.RelativeLayout"
+    ios:
+      ident_id: "SG1-PRVEN"
+      idnow_logo_classname: "android.widget.ImageView"
+      ident_box_classname: "XCUIElementTypeTextField"
+      start_button_xpath: "//XCUIElementTypeButton[@name='Start']"
+      terms_conditions_xpath: "//XCUIElementTypeStaticText[@name='Terms & Conditions']"
+      close_icon_accessibility_id: "Close"
+      quit_identification_display_xpath: "//XCUIElementTypeStaticText[@name='Quit identification session']"
+      options_radio_button_xpath: "//XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther"
+      quit_button_xpath: "//XCUIElementTypeStaticText[@name='Quit session']"
+      failure_screen_accessibility_id: "Identification not completed"

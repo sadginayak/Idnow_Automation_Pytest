@@ -1,0 +1,6 @@
+autoident_web_key_path : ['settings','idnow','autoident','web']
+autoident_web_minimum_supported_versions:
+    chrome: '75'
+    firefox: '78'
+    safari: '11'
+    edge: '80'

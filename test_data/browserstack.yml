@@ -1,0 +1,42 @@
+browserstack:
+  username: "sadginayak_H8Lz7r"
+  access_key: "JdJ6eUxcTnEEfcPassVS"
+  app_url: "bs://76fc891de9e7fe2822ff07e8b3756d1854b56d88"
+
+desired_capabilities:
+  ios:
+    buildName: "MyAppBuild_1.0"
+    projectName: "MyProject"
+    sessionName: "MyAppSession"
+    platformName: "iOS"
+    deviceName: "iPhone 14 Pro"
+    os_version: "16"
+    real_mobile: "true"
+    app: "bs://76fc891de9e7fe2822ff07e8b3756d1854b56d88"  # Replace with your app URL
+    automationName: "XCUITest"
+    newCommandTimeout: 300
+    browserstack.networkLogs: true
+    browserstack.appiumLogs: true
+    browserstack.deviceLogs: true
+    autoGrantPermissions: true
+    acceptSslCert: false
+    browserstack.local: true  # Enable local testing
+  android:
+    buildName: "AutoIdent_Buil_1.0"
+    projectName: "Idnow_API_Mobile_Automation"
+    sessionName: "MyAppSession"
+    platformName: "Android"
+    deviceName: "Samsung Galaxy S20"
+    appPackage: "io.idnow.autoident"
+    appActivity: "io.idnow.autoident.IDnowAutoIdentActivity"
+    real_mobile: "true"
+    app: "bs://61d0d23b9fc971a71c5a4703e829f0a9f6bd51b2"  # Replace with your app URL
+    automationName: "UiAutomator2"
+    newCommandTimeout: 300
+    browserstack.networkLogs: true
+    browserstack.appiumLogs: true
+    browserstack.deviceLogs: true
+    autoGrantPermissions: true
+    acceptSslCert: false
+    debug: true
+    networkLogs: true

@@ -1,3 +1,10 @@
+## Setup:
+- Download and install Python (Ignore the step if you already have python installed)
+- Clone this repo, navigate to Idnow_Automation_Pytest folder.
+- Execute requirements.txt file to install all the dependent python libraries using following command and make it pass without any error: pip install -r requirements.txt
+- Update your browserstack username, accesskey and app url in browserstack.yml to execute the mobile test
+
+
 # Project Structure
 
 This project follows a structured approach to organizing code for automated testing. Below is a brief description of the key folders and files:
